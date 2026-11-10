@@ -36,7 +36,7 @@ def main():
     meta = yaml.safe_load(match.group(1))
     require(isinstance(meta, dict), 'Frontmatter must be a mapping')
     name = meta.get('name', '')
-    require(name == 'gary-vlog-edit', 'Unexpected skill name')
+    require(name == 'somewhere-film', 'Unexpected skill name')
     require(bool(re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', name)), 'Invalid name')
     description = meta.get('description')
     require(isinstance(description, str) and 0 < len(description) <= 1024,

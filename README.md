@@ -1,6 +1,6 @@
-# Gary 的散步旅行剪辑
+# 某处影像 · Somewhere Film
 
-Gary 个人的 Vlog 剪辑 skill。把每期明确确认的偏好保存为可版本管理、可继续调整的剪辑规范。
+「某处影像」是 Gary 个人的 Vlog 剪辑 skill。把每期明确确认的偏好保存为可版本管理、可继续调整的剪辑规范。
 
 内容是剪辑指引、参考案例和校验工具；实际处理视频仍依赖使用环境中的 FFmpeg、剪辑软件及可访问素材。仓库不包含视频、照片、配乐文件或本机项目绝对路径。
 
@@ -20,7 +20,7 @@ Gary 个人的 Vlog 剪辑 skill。把每期明确确认的偏好保存为可版
 在能读取本机素材的 Codex 会话里输入：
 
 ```text
-使用 $gary-vlog-edit，按我的风格精剪这期旅行视频。
+使用 $somewhere-film，按我的风格精剪这期旅行视频。
 
 素材目录：给出完整路径
 这次经历：简单说说去了哪里、发生了什么
@@ -32,7 +32,7 @@ Gary 个人的 Vlog 剪辑 skill。把每期明确确认的偏好保存为可版
 继续修改已输出的视频：
 
 ```text
-使用 $gary-vlog-edit，继续修改最新版本。
+使用 $somewhere-film，继续修改最新版本。
 把两张照片各缩到1.5秒，保留已确认的字幕和现场声音。
 ```
 
@@ -44,15 +44,15 @@ Gary 个人的 Vlog 剪辑 skill。把每期明确确认的偏好保存为可版
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-git clone https://github.com/gary-zengjiali/gary-vlog-edit.git \
-  "${CODEX_HOME:-$HOME/.codex}/skills/gary-vlog-edit"
+git clone https://github.com/gary-zengjiali/somewhere-film.git \
+  "${CODEX_HOME:-$HOME/.codex}/skills/somewhere-film"
 ```
 
 如果目标目录已存在，先检查里面的修改，不覆盖它。素材目录在每次任务中提供，本机专属路径可放在 `.local/`，该目录不进入 Git。
 
 ## 持续维护
 
-告诉 Codex“把这条偏好保存到 gary-vlog-edit skill”，并说明它是长期偏好还是仅本期适用。典型流程是：
+告诉 Codex“把这条偏好保存到 somewhere-film skill”，并说明它是长期偏好还是仅本期适用。典型流程是：
 
 1. 修改 [SKILL.md](SKILL.md) 中真正影响剪辑判断的规则。
 2. 只在需要例子时补充 [references/](references/)；将一次性要求留在项目中。
