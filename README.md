@@ -40,7 +40,7 @@ Gary 个人的 Vlog 剪辑 skill。把每期明确确认的偏好保存为可版
 
 ## 安装到另一台电脑
 
-安装 Git，并为这个私有仓库配置 GitHub 访问权限。在终端执行：
+安装 Git。在终端执行下面的命令即可克隆公开仓库：
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
@@ -82,4 +82,4 @@ GitHub Actions 在推送与拉取请求时运行相同校验。校验确认结�
 | `CHANGELOG.md` / `VERSION` | 维护记录与版本号 |
 | `.local/` | 不上传的本机项目状态（可选） |
 
-仓库默认私有。GitHub 保存剪辑 skill 的源码与历史，实际视频素材继续放在本机项目目录。
+仓库公开。GitHub 保存剪辑 skill 的源码与历史，实际视频素材和个人项目路径继续留在本机，不随源码上传。
