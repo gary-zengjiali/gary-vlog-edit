@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gary 的散步旅行剪辑"
+  short_description: "按 Gary 的散步旅行风格精剪，保留现场感、紧凑节奏与克制配乐"
+  default_prompt: "请使用 $gary-vlog-edit，按我的散步旅行风格剪辑这期素材，完成视频并说明本次修改。"
